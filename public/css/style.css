@@ -65,3 +65,42 @@ header>h1 {
     background: #305476;
     color: #fff;
 }
+
+
+/* Controles */
+
+.button {
+    margin: 20px 0;
+    padding: 15px 25px;
+    background: #3dbe77;
+    box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+
+/* Produtos */
+
+.produtos {
+    margin: 20px 0;
+    padding: 15px 25px;
+    background: #3dabbe;
+    box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.produtos h3 {
+    font-size: 25px;
+    color: #0b0729;
+}
+
+.produtos li {
+    margin: 5px 0;
+    color: #0b0729;
+}
+
+.produtos .tags {
+    margin-top: 20px;
+    padding: 5px 10px;
+    background: #305476;
+    color: #fff;
+}

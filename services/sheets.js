@@ -11,7 +11,6 @@ function salvar(ID_da_compra, Produtos, Data_da_compra, Data_do_envio, Data_esti
             "Data estimada de entrega": Data_estimada_de_entrega,
             "Descrição": Descricao,
         }
-
     }, {
         "auth": {
             "username": "d6rs77sh",
@@ -63,7 +62,6 @@ function atualizarProduto(Descricao, Produto) {
             "data": {
                 "Produto": Produto
             }
-
         }, {
             "auth": {
                 "username": "n3u0jjij",

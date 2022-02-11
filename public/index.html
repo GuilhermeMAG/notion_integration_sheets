@@ -12,13 +12,16 @@
     <meta name="author" content="Guilherme Casagrande">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="icon" href="images/icon.png">
-    <title>Notion >> Sheets</title>
+    <title>Notion > Sheets</title>
 </head>
 
-<body onload="setTimeout('Atualizar()', 5000)">
+<body onload="setTimeout('Atualizar()', 60000)">
     <header>
         <h1><strong>Notheets </strong>by: Guilherme Casagrande</h1>
         <h3>Integration Notion with Google Sheets</h3>
+        <div id="controls">
+            <button onclick="Atualizar()"> Refresh </button>
+        </div>
     </header>
     <main class="container">
         <div id="loading">

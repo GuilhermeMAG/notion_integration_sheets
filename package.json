@@ -4,7 +4,7 @@
     "description": "Integration with Notion and Google Sheets",
     "main": "index.js",
     "scripts": {
-        "start": "node index"
+        "start": "node index.js"
     },
     "keywords": [],
     "author": "Guilherme Casagrande",

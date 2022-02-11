@@ -1,5 +1,6 @@
 const comprasEl = document.querySelector('#compras')
 const loadingEl = document.querySelector('#loading')
+const produtosEl = document.querySelector('#produtos')
 let loading = false
 
 const getComprasFromBack = async() => {
@@ -15,7 +16,6 @@ const addComprasToDom = async() => {
     if (!loading) {
         loadingEl.innerHTML = ''
     }
-
     compras.forEach(compras => {
         const div = document.createElement('div')
         div.className = 'compras'
@@ -34,6 +34,41 @@ const addComprasToDom = async() => {
 
 addComprasToDom()
 
+
+//Refresh
 function Atualizar() {
     window.location.reload();
 }
+
+
+//Produtos
+const getProdutosFromBack = async() => {
+    loading = true
+    const res = await fetch('http://localhost:5000/produtos')
+    const data = await res.json()
+    loading = false
+    return data
+}
+
+const addProdutosToDom = async() => {
+    const produtos = await getProdutosFromBack()
+    if (!loading) {
+        loadingEl.innerHTML = ''
+    }
+    produtos.forEach(produtos => {
+        const div = document.createElement('div')
+        div.className = 'produtos'
+        div.innerHTML = `
+        <h3></strong>${produtos.nome}</h3>
+        <ul>
+        <li><strong>Descrição: </strong>${produtos.nome}</li>
+        <li><strong>Estoque Atual: </strong>${produtos.estoqueAtual}</li>
+        <li><strong>Estoque Minímo: </strong>${produtos.estoqueMin}</li>
+        </ul>
+        <div class="tags"><strong>Status: </strong>${produtos.status}</div>
+        `
+        produtosEl.appendChild(div)
+    })
+}
+
+addProdutosToDom()
