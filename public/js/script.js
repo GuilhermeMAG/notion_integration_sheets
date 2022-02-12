@@ -1,6 +1,6 @@
-const comprasEl = document.querySelector('#compras')
+const comprasEl = document.querySelector('#comprasEl')
 const loadingEl = document.querySelector('#loading')
-const produtosEl = document.querySelector('#produtos')
+const produtosEl = document.querySelector('#produtosEl')
 let loading = false
 
 const getComprasFromBack = async() => {

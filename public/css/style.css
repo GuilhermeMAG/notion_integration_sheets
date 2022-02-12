@@ -12,8 +12,7 @@ ul {
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    max-width: 800px;
-    margin: 40px auto;
+    margin: 10px;
     background-color: #ffffff;
     color: #fff;
 }
@@ -41,9 +40,39 @@ header>h1 {
     width: inherit;
 }
 
+
+/* Containers */
+
+.flex-container {
+    height: 490px;
+    overflow: scroll;
+}
+
+.container {
+    height: 490px;
+    overflow: scroll;
+}
+
+#comprasEl {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#produtosEl {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Compras */
+
 .compras {
-    margin: 20px 0;
-    padding: 15px 25px;
+    margin: 10px 10px;
+    padding: 10px 20px;
     background: #3dbe77;
     box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -51,7 +80,14 @@ header>h1 {
 
 .compras h3 {
     font-size: 25px;
+    padding: 5px;
     color: #0b0729;
+}
+
+.compras h3:hover {
+    background-color: #305476;
+    color: #ddd;
+    border-radius: 5px;
 }
 
 .compras li {
@@ -60,7 +96,7 @@ header>h1 {
 }
 
 .compras .tags {
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 5px 10px;
     background: #305476;
     color: #fff;
@@ -69,7 +105,7 @@ header>h1 {
 
 /* Controles */
 
-.button {
+.controls>button {
     margin: 20px 0;
     padding: 15px 25px;
     background: #3dbe77;
@@ -81,8 +117,8 @@ header>h1 {
 /* Produtos */
 
 .produtos {
-    margin: 20px 0;
-    padding: 15px 25px;
+    margin: 10px 10px;
+    padding: 10px 20px;
     background: #3dabbe;
     box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -91,6 +127,12 @@ header>h1 {
 .produtos h3 {
     font-size: 25px;
     color: #0b0729;
+}
+
+.produtos h3:hover {
+    background-color: #305476;
+    color: #ddd;
+    border-radius: 5px;
 }
 
 .produtos li {
