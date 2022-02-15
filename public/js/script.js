@@ -65,7 +65,7 @@ const addProdutosToDom = async() => {
         <li><strong>Estoque Atual: </strong>${produtos.estoqueAtual}</li>
         <li><strong>Estoque Minímo: </strong>${produtos.estoqueMin}</li>
         </ul>
-        <div class="tags"><strong>Status: </strong>${produtos.status}</div>
+        <div class="tags"><a><strong>Status: </strong>${produtos.status}</a></div>
         `
         produtosEl.appendChild(div)
     })
