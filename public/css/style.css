@@ -29,7 +29,7 @@ header>h1 {
 #loading {
     height: 100px;
     width: 100px;
-    position: absolute;
+    position: relative;
     top: 30%;
     left: 50%;
     transform: translateX(-50%);
